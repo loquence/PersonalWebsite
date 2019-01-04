@@ -8,7 +8,7 @@ function Jumbo() {
                     <div className="container">
                         <div className="row row-header">
                             <div className="col-12">
-                                <img className="rounded-circle mx-auto d-block" src="/assets/images/profileimage.jpg" />
+                                <img className="rounded-circle mx-auto d-block" src="/assets/images/profileimage.jpg" alt="Ryan"/>
                             </div>
                         </div>
                         <div className="row row-header">

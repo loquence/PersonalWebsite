@@ -1,6 +1,6 @@
 import React from 'react';
 import Jumbo from './JumboComponent';
-import { Row, Col } from 'reactstrap';
+import { Row } from 'reactstrap';
 
 function Home() {
     return (
@@ -14,11 +14,11 @@ function Home() {
                     <h1 className="aboutme" align="center">About me</h1>
                     <br />
                     <div className="col-12"> 
-                    <p>I'm a new graduate from the University of Georgia. I liek stuff and other stuff and 
+                        <p>I'm a new graduate from the University of Georgia. I liek stuff and other stuff and 
                         I'm just filling this up now until i actually get something that can go here. I really like football
                         and sports and playing guitar and this is really bad grammar.    
-                     </p>
-                </div>
+                        </p>
+                    </div>
                 </div>
             </Row>
         </>    
