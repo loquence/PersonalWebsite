@@ -17,8 +17,9 @@ class Main extends Component {
             <div>
                 <Header />
                 <Switch>
-                    <Route path={process.env.PUBLIC_URL + '/'} component={Home} />
-                    <Redirect to={process.env.PUBLIC_URL + '/'}  />
+                    <Route path={'/'} component={Home} />
+                    <Redirect to={'/'}  />
+                    
                 </Switch>
                 <Footer />
             </div>
