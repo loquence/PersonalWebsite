@@ -56,7 +56,7 @@ class Header extends Component {
                 <Navbar expand="md" className="navbar-light">
                     <div className="container-fluid">
                         <NavbarToggler className="m-2" onClick={this.toggleNav}/>
-                        <NavbarBrand className="mr-auto brand" href="/">
+                        <NavbarBrand className="mr-auto brand" href={process.env.PUBLIC_URL + '/'}>
                             Ryan Kennedy
                         </NavbarBrand>
                         <Collapse isOpen={this.state.isNavOpen} navbar>
@@ -64,7 +64,7 @@ class Header extends Component {
                           <Nav className="ml-auto" navbar>
                             <Nav navbar>
                                <NavItem>
-                                  <NavLink className="nav-link" to="/portfolio">
+                                  <NavLink className="nav-link" to={process.env.PUBLIC_URL + '/portfolio'}>
                                         <span className="fa fa-folder-open fa-lg"></span> Portfolio
                                     </NavLink>
                                 </NavItem>
