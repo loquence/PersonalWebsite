@@ -9,7 +9,7 @@ import * as serviceWorker from './serviceWorker';
 import { Router } from 'react-router';
 import createHashHistory from 'history/createHashHistory';
 
-const hashHistory = createHashHistory({basename: process.env.PUBLIC_URL});
+const hashHistory = createHashHistory({basename: '/'});
 
 ReactDOM.render(
 <Router history={hashHistory}>

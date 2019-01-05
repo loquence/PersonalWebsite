@@ -56,7 +56,7 @@ class Header extends Component {
                 <Navbar expand="md" className="navbar-light">
                     <div className="container-fluid">
                         <NavbarToggler className="m-2" onClick={this.toggleNav}/>
-                        <NavbarBrand className="mr-auto brand" href={process.env.PUBLIC_URL + process.env.PUBLIC_URL + '#/home'}>
+                        <NavbarBrand className="mr-auto brand" to={process.env.PUBLIC_URL + process.env.PUBLIC_URL + '#/home'}>
                             Ryan Kennedy
                         </NavbarBrand>
                         <Collapse isOpen={this.state.isNavOpen} navbar>
