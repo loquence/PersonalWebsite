@@ -64,7 +64,7 @@ class Header extends Component {
                           <Nav className="ml-auto" navbar>
                             <Nav navbar>
                                <NavItem>
-                                  <NavLink className="nav-link" to={process.env.PUBLIC_URL + '/portfolio'}>
+                                  <NavLink className="nav-link" to="/portfolio">
                                         <span className="fa fa-folder-open fa-lg"></span> Portfolio
                                     </NavLink>
                                 </NavItem>
