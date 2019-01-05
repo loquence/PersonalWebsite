@@ -1,6 +1,7 @@
 import React from 'react';
 import {Jumbotron } from 'reactstrap';
 
+
 function Jumbo() {
     return(
         <>
@@ -8,7 +9,7 @@ function Jumbo() {
                     <div className="container">
                         <div className="row row-header">
                             <div className="col-12">
-                                <img className="rounded-circle mx-auto d-block" src="/assets/images/profileimage.jpg" alt="Ryan"/>
+                                <img className="rounded-circle mx-auto d-block" src={process.env.PUBLIC_URL + '/assets/images/profileimage.jpg'}  alt="Ryan"/>
                             </div>
                         </div>
                         <div className="row row-header">
