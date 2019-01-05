@@ -1,12 +1,14 @@
 import React from 'react';
+ 
 
 
-const Portfolio = () => {
-    return (
-        <div>
-            <p>This is a test to see if this will work</p>
-        </div>
+
+function Portfolio(props) {
+    return(
+      <div className="container">
+        <h4>Home</h4>
+      </div>
     );
 }
 
-export default Portfolio;
+export default Portfolio;   

@@ -11,17 +11,22 @@ import Portfolio from './PortfolioComponent';
 
 class Main extends Component {
 
+    
 
     render(){
+        const PortfolioPage = () => {
+            return(
+                <Portfolio />
+            );
+          }
         
         return(
             <div>
                 <Header />
                 <Switch>
-                    <Route path={'/'} component={Home} />
-                    <Route path={'/portfolio'} component={Portfolio} />
-                    <Redirect to={'/'}  />
-                    
+                    <Route path={'/home'} component={Home} />
+                    <Route exact path={'/portfolio'} component={PortfolioPage} />
+                    <Redirect to={'/home'}  />
                 </Switch>
                 <Footer />
             </div>
