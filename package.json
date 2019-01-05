@@ -2,7 +2,7 @@
   "name": "personalwebsite",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://loquence.github.io/PersonalWebsite/",
+  "homepage": "https://loquence.github.io/PersonalWebsite/home",
   "dependencies": {
     "bootstrap": "4.1.2",
     "bootstrap-social": "5.1.1",
