@@ -1,14 +1,11 @@
 import React from 'react';
-import Jumbo from './JumboComponent';
 import { Row } from 'reactstrap';
 
 function Home() {
     return (
         
         <>
-            <Jumbo />
-            <br />
-            <br />
+            
             <Row>
                 <div className="col-sm-6 col-md-4 offset-md-4">
                     <h1 className="aboutme" align="center">About me</h1>
