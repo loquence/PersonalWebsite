@@ -11,9 +11,9 @@ function Home() {
                     <h1 className="aboutme" align="center">About me</h1>
                     <br />
                     <div className="col-12"> 
-                        <p>I'm a new graduate from the University of Georgia. I liek stuff and other stuff and 
-                        I'm just filling this up now until i actually get something that can go here. I really like football
-                        and sports and playing guitar and this is really bad grammar.    
+                        <p>I'm a recent graduate from the University of Georgia with a BS in Computer Science. I'm experienced
+                            in React, Javascript, C#, .NET framework, HTML, and CSS. I have developed multiple applications in Agile
+                            and Scrum enviroments during group projects.    
                         </p>
                     </div>
                 </div>
