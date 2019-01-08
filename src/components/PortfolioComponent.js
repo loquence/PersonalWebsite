@@ -25,17 +25,17 @@ function RenderPortfolio() {
             </FadeTransform>
       </div>
       <div className="col-12 col-md-4 m-1">
-        <FadeTransform in transformProps={{exitTrasform: 'scale(0.5) translateY(-50%)'}} >
-            <Card >
-                    <a href="https://loquence.github.io/FABRIK/">
-                        <CardImg width="100%" src={process.env.PUBLIC_URL + '/assets/images/fabrikdocumentation.png'}  alt="fabrik doc"/>
-                    </a>
-                        <CardBody>
-                            <CardTitle>Fabrick Documentation</CardTitle>
-                            <CardText>A website hosting all the documention for the essential portfolio developed by the Fabrik group in the Human-Computer Interactions Class</CardText>
-                        </CardBody>
-                    
-                </Card>
+            <FadeTransform in transformProps={{exitTrasform: 'scale(0.5) translateY(-50%)'}} >
+                <Card >
+                        <a href="https://loquence.github.io/FABRIK/">
+                            <CardImg width="100%" src={process.env.PUBLIC_URL + '/assets/images/fabrikdocumentation.png'}  alt="fabrik doc"/>
+                        </a>
+                            <CardBody>
+                                <CardTitle>Fabrick Documentation</CardTitle>
+                                <CardText>A website hosting all the documention for the essential portfolio developed by the Fabrik group in the Human-Computer Interactions Class</CardText>
+                            </CardBody>
+                        
+                    </Card>
             </FadeTransform>
       </div>
       
