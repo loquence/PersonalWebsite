@@ -3,18 +3,7 @@ import { Card, CardImg, CardBody, CardText, CardTitle, Breadcrumb, BreadcrumbIte
 import { Link } from 'react-router-dom';
 
 /*
-<div className="col-12 col-md-4 m-1">
-          <Card >
-                  <a href="">
-                      <CardImg width="100%" src={process.env.PUBLIC_URL + '/assets/images/RyanResume.pdf'}  alt="resume"/>
-                  </a>
-                      <CardBody>
-                          <CardTitle>Resume</CardTitle>
-                          <CardText>A website built using the C# and the .NET Framework. It is deployed and hosted on azure.</CardText>
-                      </CardBody>
-                  
-              </Card>
-      </div>
+
 */
 
 function RenderPortfolio() {
@@ -28,6 +17,18 @@ function RenderPortfolio() {
                       <CardBody>
                           <CardTitle>Essential Portfolio</CardTitle>
                           <CardText>A website built using the C# and the .NET Framework. It is deployed and hosted on azure.</CardText>
+                      </CardBody>
+                  
+              </Card>
+      </div>
+      <div className="col-12 col-md-4 m-1">
+          <Card >
+                  <a href="https://loquence.github.io/FABRIK/">
+                      <CardImg width="100%" src={process.env.PUBLIC_URL + '/assets/images/fabrikdocumentation.png'}  alt="fabrik doc"/>
+                  </a>
+                      <CardBody>
+                          <CardTitle>Fabrick Documentation</CardTitle>
+                          <CardText>A website hosting all the documention for the essential portfolio developed by the Fabrik group in the Human-Computer Interactions Class</CardText>
                       </CardBody>
                   
               </Card>

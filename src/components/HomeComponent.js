@@ -11,9 +11,9 @@ function Home() {
                     <h1 className="aboutme" align="center">About me</h1>
                     <br />
                     <div className="col-12"> 
-                        <p>I'm a recent graduate from the University of Georgia with a BS in Computer Science. I'm experienced
+                        <p>I'm a recent graduate from the University of Georgia with a B.S. in Computer Science. I'm experienced
                             in React, Javascript, C#, .NET framework, HTML, and CSS. I have developed multiple applications in Agile
-                            and Scrum enviroments during group projects.    
+                            and Scrum environments.    
                         </p>
                     </div>
                 </div>
