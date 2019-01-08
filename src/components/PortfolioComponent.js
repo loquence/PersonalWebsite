@@ -1,6 +1,7 @@
 import React from 'react';
 import { Card, CardImg, CardBody, CardText, CardTitle, Breadcrumb, BreadcrumbItem } from 'reactstrap';
 import { Link } from 'react-router-dom';
+import { FadeTransform } from 'react-animation-components';
 
 /*
 
@@ -10,6 +11,7 @@ function RenderPortfolio() {
   return(
     <>
       <div className="col-12 col-md-4 m-1">
+            <FadeTransform in transformProps={{exitTrasform: 'scale(0.5) translateY(-50%)'}} >
               <Card >
                   <a href="https://essentialportfolio.azurewebsites.net">
                       <CardImg width="100%" src={process.env.PUBLIC_URL + '/assets/images/essentialportfolio.png'}  alt="essential portfolio"/>
@@ -20,18 +22,21 @@ function RenderPortfolio() {
                       </CardBody>
                   
               </Card>
+            </FadeTransform>
       </div>
       <div className="col-12 col-md-4 m-1">
-          <Card >
-                  <a href="https://loquence.github.io/FABRIK/">
-                      <CardImg width="100%" src={process.env.PUBLIC_URL + '/assets/images/fabrikdocumentation.png'}  alt="fabrik doc"/>
-                  </a>
-                      <CardBody>
-                          <CardTitle>Fabrick Documentation</CardTitle>
-                          <CardText>A website hosting all the documention for the essential portfolio developed by the Fabrik group in the Human-Computer Interactions Class</CardText>
-                      </CardBody>
-                  
-              </Card>
+        <FadeTransform in transformProps={{exitTrasform: 'scale(0.5) translateY(-50%)'}} >
+            <Card >
+                    <a href="https://loquence.github.io/FABRIK/">
+                        <CardImg width="100%" src={process.env.PUBLIC_URL + '/assets/images/fabrikdocumentation.png'}  alt="fabrik doc"/>
+                    </a>
+                        <CardBody>
+                            <CardTitle>Fabrick Documentation</CardTitle>
+                            <CardText>A website hosting all the documention for the essential portfolio developed by the Fabrik group in the Human-Computer Interactions Class</CardText>
+                        </CardBody>
+                    
+                </Card>
+            </FadeTransform>
       </div>
       
       
@@ -55,7 +60,9 @@ function Portfolio(props) {
             </div>
           </div>
           <div className="row">
-          <RenderPortfolio />
+          
+            <RenderPortfolio />
+         
           </div>
       </div>
     );

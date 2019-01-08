@@ -7,19 +7,13 @@ import Header from './HeaderComponent';
 import Footer from './FooterComponent';
 import Portfolio from './PortfolioComponent';
 import Jumbo from './JumboComponent';
-
+import { TransitionGroup, CSSTransition } from 'react-transition-group';
 
 
 class Main extends Component {
 
-    
-
     render(){
-        const PortfolioPage = () => {
-            return(
-                <Portfolio />
-            );
-          }
+        
         
         return(
             <div>
@@ -27,11 +21,17 @@ class Main extends Component {
                 <Jumbo />
                 <br />
                 <br />
-                <Switch>
-                    <Route path={'/home'} component={Home} />
-                    <Route exact path={'/portfolio'} component={PortfolioPage} />
-                    <Redirect to={'/home'}  />
-                </Switch>
+                <Header />
+                <TransitionGroup>
+                    <CSSTransition key={this.props.location.pathname} classNames="page" timeout={300}>
+                        <Switch>
+                            <Route path={'/home'} component={Home} />
+                            <Route exact path={'/portfolio'} component={Portfolio} />
+                            <Redirect to={'/home'}  />
+                        </Switch>
+                    </CSSTransition>
+                </TransitionGroup>        
+                    
                 <Footer />
             </div>
         );

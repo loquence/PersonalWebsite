@@ -56,8 +56,10 @@ class Header extends Component {
                 <Navbar expand="md" className="navbar-light" fixed="top" >
                     <div className="container-fluid">
                         <NavbarToggler className="m-2" onClick={this.toggleNav}/>
-                        <NavbarBrand className="mr-auto brand" href="#/home">
-                            Ryan Kennedy
+                        <NavbarBrand className="mr-auto brand" >
+                            <NavLink className="nav-link" to="/home">
+                                Ryan Kennedy
+                            </NavLink>
                         </NavbarBrand>
                         <Collapse isOpen={this.state.isNavOpen} navbar>
                             
